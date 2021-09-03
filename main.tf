@@ -5,7 +5,7 @@ resource "aws_instance" "sample" {
   associate_public_ip_address = true
   key_name=JARVIS
   root_block_device {
-     volume_size = 30GB
+     volume_size = 30
   }
   tags = {
     Sample = "Harness"
