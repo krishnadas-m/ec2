@@ -15,4 +15,10 @@ variable "region" {
     type=string
 default="ap-south-1"
 }
+variable "subnet" {
+   type=string
+}
+variable "keyname" {
+   type=string
+}
 
