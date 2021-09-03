@@ -20,3 +20,14 @@ resource "aws_instance" "sample" {
 provider "aws" {
    region=var.region
 }
+
+output "ec2_tags" {
+   value = aws_instance.sample.tags_all    
+}
+output "ec2_ip" {
+   value = aws_instance.sample.private_ip
+}
+
+output "region" {
+value = var.region
+}
