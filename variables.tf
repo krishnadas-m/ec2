@@ -10,3 +10,9 @@ variable "instanceType" {
    type = string
    default = "t3a.medium"
 }
+
+variable "region" {
+    type=string
+default="ap-south-1"
+}
+
